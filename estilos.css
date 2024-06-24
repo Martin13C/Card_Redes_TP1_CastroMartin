@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    font-family: 'Roboto';
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.padre{
+
+    border-radius: 10px;
+    background-color: rgb(9, 8, 8) ;
+    margin: 50px 10px 50px 10px;
+    padding: 30px;
+    width: 250px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+.padre:hover{
+    box-shadow:3px 3px 4px rgb(168, 168, 168);
+    transform: scale(1.05);
+    transition: tranform 700ms ease;
+    transition: box-shadow 500ms ease;
+}
+
+img{
+    width:70px;
+    border: none;
+    border-radius: 100px;
+    box-shadow: 3px 3px 13px rgb(7, 134, 166);
+
+}
+
+img:hover{
+    transform: scale(1.13);
+    transition: transform 600ms ease;
+}
+
+
+h1{
+    font-weight: bolder;
+    margin:0;
+    color: rgb(244, 230, 230);
+    font-size: 18px;
+    
+}
+
+h2{
+    font-weight: bold;
+    margin: 0;
+    color: rgb(15, 203, 246);
+    font-size: 10px;
+  
+
+}
+
+p{
+    font-weight: 400;
+    margin: 20px 0px 20px 0px;
+    color: rgb(92, 93, 92);
+    font-size: 10px;
+}
+
+a{
+    position: relative;
+    margin: 8px;
+    text-decoration:none;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 13px;
+    padding: 0px;
+    color: rgb(237, 232, 225);
+    height: 25px;
+    border-radius: 2px;
+    border: none;
+    background-color: rgb(21, 22, 23);
+    display: flex;
+    box-shadow: 1px 1px 4px rgb(81, 81, 74);
+    align-items: center;
+    
+}
+
+.hijo1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hijo2{
+    /* display: flex;
+    justify-content: center;
+    flex-direction: column;
+     */
+}
+
+.insta:hover::after{
+    width: 23px; 
+    height: 23px; 
+    opacity: 5;
+}
+
+.insta:hover{
+    background: linear-gradient(to right, red 40%, orange);
+    /* Puedes ajustar el ángulo del degradado con to right, to left, to top, to bottom, o un ángulo específico como 45deg */
+    transform: scale(1.05);
+    box-shadow: 1px 1px 4px rgb(200, 196, 196);
+    transition: transform 100ms ease;
+    transition: background-color 300ms ease;
+    transition: box-shadow 700ms ease;
+    color: transparent;
+}
+
+.insta::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background-image: url('/Card-Redes\ sociales{NOMBRE\ Y\ APELLIDO}/img/insta.svg'); /* Ruta a tu imagen */
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 300ms ease, width 300ms ease, height 300ms ease;
+}
+
+.face:hover::after{
+    width: 33px; 
+    height: 33px; 
+    opacity: 5;
+}
+.face:hover{
+    background: linear-gradient(to right, rgb(19, 0, 225) 40%, rgb(2, 4, 35));
+    /* Puedes ajustar el ángulo del degradado con to right, to left, to top, to bottom, o un ángulo específico como 45deg */
+    transform: scale(1.05);
+    box-shadow: 1px 1px 4px rgb(200, 196, 196);
+    transition: transform 100ms ease;
+    transition: background-color 300ms ease;
+    transition: box-shadow 700ms ease;
+    color: transparent;
+}
+
+.face::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background-image: url('/Card-Redes\ sociales{NOMBRE\ Y\ APELLIDO}/img/face.svg'); /* Ruta a tu imagen */
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 300ms ease, width 300ms ease, height 300ms ease;
+}
+.git:hover::after{
+    width: 21px; 
+    height: 21px; 
+    opacity: 5;
+}
+.git:hover{
+    background: linear-gradient(to right, rgb(89, 0, 105) 20%, rgb(0, 0, 0));
+    /* Puedes ajustar el ángulo del degradado con to right, to left, to top, to bottom, o un ángulo específico como 45deg */
+    transform: scale(1.05);
+    box-shadow: 1px 1px 4px rgb(200, 196, 196);
+    transition: transform 100ms ease;
+    transition: background-color 300ms ease;
+    transition: box-shadow 700ms ease;
+    color: transparent;
+}
+
+.git::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background-image: url('/Card-Redes\ sociales{NOMBRE\ Y\ APELLIDO}/img/git.svg'); /* Ruta a tu imagen */
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 300ms ease, width 300ms ease, height 300ms ease;
+}
+
+.gmail:hover::after{
+    width: 21px; 
+    height: 21px; 
+    opacity: 5;
+}
+
+.gmail:hover{
+    background: linear-gradient(to right, rgb(0, 238, 255) 20%, rgb(0, 4, 251));
+    /* Puedes ajustar el ángulo del degradado con to right, to left, to top, to bottom, o un ángulo específico como 45deg */
+    transform: scale(1.05);
+    box-shadow: 1px 1px 4px rgb(200, 196, 196);
+    transition: transform 100ms ease;
+    transition: background-color 300ms ease;
+    transition: box-shadow 700ms ease;
+    color: transparent;
+}
+
+.gmail::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background-image: url('/Card-Redes\ sociales{NOMBRE\ Y\ APELLIDO}/img/gmail.svg'); /* Ruta a tu imagen */
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 300ms ease, width 300ms ease, height 300ms ease;
+}
+
+.wasap:hover::after{
+    width: 21px; 
+    height: 21px; 
+    opacity: 5;
+}
+
+.wasap:hover{
+    background: linear-gradient(to right, rgb(0, 218, 33) 2%, rgb(16, 98, 29));
+    /* Puedes ajustar el ángulo del degradado con to right, to left, to top, to bottom, o un ángulo específico como 45deg */
+    transform: scale(1.05);
+    box-shadow: 1px 1px 4px rgb(200, 196, 196);
+    transition: transform 100ms ease;
+    transition: background-color 300ms ease;
+    transition: box-shadow 700ms ease;
+    color: transparent;
+}
+
+.wasap::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background-image: url('/Card-Redes\ sociales{NOMBRE\ Y\ APELLIDO}/img/wasap.svg'); /* Ruta a tu imagen */
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 300ms ease, width 300ms ease, height 300ms ease;
+}
+
+@media (max-width:576px){
+    .padre{
+        width: 80%;
+        height: 70%;
+    }
+}
+
